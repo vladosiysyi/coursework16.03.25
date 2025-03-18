@@ -1,6 +1,7 @@
 import pytest
 from unittest.mock import patch, Mock
-from scr.api_client import HH, Vacancy
+from scr.api_client import HH
+from scr.vacancy import Vacancy
 from scr.storage import JSONStorage
 import tempfile
 import json
