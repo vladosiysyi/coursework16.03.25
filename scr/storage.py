@@ -25,8 +25,8 @@ class Storage(ABC):
 class JSONStorage(Storage):
     """Класс для работы с JSON-файлом как хранилищем вакансий."""
 
-    def __init__(self, filename):
-        """Инициализация хранилища JSON-файла"""
+    def __init__(self, filename="vacancies.json"):
+        """Инициализирует JSON-хранилище, создавая файл при необходимости."""
         current_dir = os.path.dirname(__file__)
         parent_dir = os.path.dirname(current_dir)
         data_dir = os.path.join(parent_dir, 'data')
