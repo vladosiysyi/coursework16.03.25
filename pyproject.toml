@@ -1,0 +1,25 @@
+[project]
+name = "coursework"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "chikl",email = "chiklow@mail.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)",
+    "pytest (>=8.3.5,<9.0.0)",
+    "flake8 (>=7.1.2,<8.0.0)",
+    "mypy (>=1.15.0,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^6.0.0"
+autopep8 = "^2.3.2"
+
